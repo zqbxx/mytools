@@ -1,0 +1,1 @@
+python dnscache.py hosts
