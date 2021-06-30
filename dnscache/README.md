@@ -29,6 +29,6 @@
 ##### 其他功能
 需要在具有管理员权限的命令行中执行，否则无法看到输出内容
 1. 查询域名对应的ip
-    `python lookup you_host_name`
+    `python dnscache.py lookup you_host_name`
 2. 将单个域名的ip更新到hosts文件中
-   `python update you_host_name`
+   `python dnscache.py update you_host_name`
