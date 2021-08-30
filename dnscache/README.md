@@ -14,9 +14,16 @@
 - `hosts.vbs`
   更新hosts文件中hostname对应的ip
 - `dns.txt`
-  第一行填入包含dns服务器地址的文件路径（`randomdns`工具的dns.txt）
+  第一行填入包含dns服务器地址的文件路径（`randomdns`工具中的dns.txt）
 - `skip.txt`
   在hosts文件中不需要更新的域名
+- `dnscache.py`
+  程序文件，依赖nslookup输出。不同版本、语言的windows操作系统需要修改三个字段，用于解析nsloopup的输出
+  ```
+    dns_cache_record_begin = '----------------------------------------'
+    dns_cache_record_name = '记录名称'
+    dns_cache_a_record = 'A (主机)记录'
+  ```
 
 ### 使用说明
 ##### 首次使用

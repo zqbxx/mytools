@@ -117,6 +117,9 @@ def lookup_hostname(hostname):
         logger.info('hostname not found')
         return []
     logger.info('find ip: ' + str([e.address for e in entries]))
+    hosts = Hosts()
+    entries_in_hosts = hosts.find_all_matching(name=hostname)
+    logger.info('ip in hosts: ' + str([e.address for e in entries]))
     os.system('pause')
     return entries
 
